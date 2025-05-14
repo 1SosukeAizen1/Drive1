@@ -1,0 +1,364 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Luckiest Guy', cursive;
+    color: #000000;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+
+/* Menu Items Container */
+#menu-items {
+    padding-top: 10px;
+    position: absolute;
+    top: 0; /* Align the menu to the top */
+    left: 0;
+    width: 50%; /* Full width of the viewport */
+    height: 100%; /* Take 70% of the viewport height */
+    overflow-y: auto;
+    
+    
+    
+    background: transparent; /* Semi-transparent background for better readability */
+
+   
+}
+
+/* Slideshow Container */
+#slideshow-container {
+    position: absolute;
+    bottom: 0; /* Align the slideshow to the bottom */
+    left: 60%;
+    width: 40%; /* Full width of the viewport */
+    height: 47%;
+    
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Slideshow Image */
+.slideshow-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow-image.active {
+    opacity: 1;
+}
+
+/* Category Block */
+.menu-category {
+    position: relative; /* Enable z-index control */
+    background: rgb(0, 0, 0); /* Default background */
+    display: flex;
+    flex-direction: column; /* Stack content vertically inside each category */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    
+    text-align: center;
+    background-size: cover; /* Ensure the background image covers the entire category */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background repetition */
+    z-index: 1;
+    transition: opacity 0s ease-in-out; /* Smooth transition for showing/hiding */
+    padding-bottom: 3px;
+
+    
+}
+
+/* Background Image */
+.menu-category::before {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out; /* Smooth transition for showing/hiding */
+}
+
+/* Active Background Image */
+.menu-category.active::before {
+    
+    opacity: 1; /* Show the background image */
+}
+
+/* Hidden Category */
+.menu-category.hidden {
+    display: none;
+    opacity: 0; /* Hide the category content */
+    z-index: 1; /* Push the category content below the background image */
+}
+/* Remove the dashed line for the last category */
+.menu-category:last-child {
+    border-bottom: none;
+}
+/* Category Title */
+.category-title {
+    
+    font-size: 4rem; /* Slightly larger font size */
+    color: #000000; /* White text for contrast */
+    max-width: 100%;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for depth */
+    background: #f22c05;
+    
+    border-radius: 13px; /* Rounded corners */
+    padding: 2px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5); /* Add a glowing red shadow */
+}
+
+/* Category Title Wrapper */
+.category-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.category-title-wrapper .category-title {
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+.category-title-wrapper .category-icon {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    background: #fff;
+    padding: 4px;
+    object-fit: contain;
+}
+
+/* Items Grid */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10%, 1fr)); /* Fit multiple items in rows */
+    background: black;
+    
+    z-index: 1;
+}
+
+/* Menu Item */
+.menu-item {
+    background: transparent;
+    gap: 1px;
+    text-align: center;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.item-name {
+    font-size: 3.1rem;
+    color: #ffe600;
+    padding-inline: 1px;
+    padding-top:10px;
+    
+}
+
+.item-desc {
+    font-size: 1.8rem;
+    color: #ddd;
+    font-style: italic;
+    font-weight: light;
+    padding-inline: 10px;
+}
+
+.item-price {
+    font-size: 2.9rem;
+    color: #ffffff;
+    font-weight: bold;
+    padding-inline: 10px;
+    padding: 10px;
+}
+
+#logo {
+    position: absolute;
+    top: 6px;
+    left: 30%;
+    width: 150px; /* Adjust size as needed */
+    height: 100px; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure logo is above the slideshow */
+    opacity: 1; /* Slightly transparent */
+}
+
+
+/* Secondary Menu Styles */
+#secondary-menu-items {
+    
+    position: absolute;
+    top: 0; /* Align the secondary menu to the top */
+    left: 52%;
+    width: 48%; /* Full width of the viewport */
+    height: 100%; /* Take 30% of the viewport height */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    background-color: rgba(0, 0, 0, 0.9); /* Slightly darker background */
+    z-index: 2; /* Ensure it appears above the slideshow */
+    padding-top: 10px;
+}
+
+.menu-category.secondary {
+    border: 2px solid #ff2a00; /* Highlighted border */
+    margin-bottom: 10px;
+    padding: 10px;
+    
+   
+}
+
+.category-title.secondary {
+    font-size: 2rem; /* Slightly smaller font size for secondary menu */
+    color: #ffcc00;
+    
+}
+
+.items-grid.secondary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid for secondary menu */
+    gap: 10px;
+    
+}
+
+.menu-item.secondary {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+
+
+.menu-category > img {
+    display: block;
+    margin: 0 auto 12px auto;
+    max-width: 100%;
+    max-height: 30%;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    background:transparent;
+    
+    object-fit: contain;
+}
+.category-title-wrapper .category-icon {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    background: transparent;
+    padding-top: 30px;
+    object-fit: contain;
+}
+
+.flame-banner {
+    background: linear-gradient(90deg, #fffbe6 60%, #ffd580 100%);
+    color: #b80000;
+    border: 2px solid #ff9900;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(255,153,0,0.10);
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding: 8px 2px;
+    margin: 20px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    z-index: 2;
+    overflow: visible;
+    display: block;
+    animation: none;
+}
+
+
+.flame-new {
+    background: #ffcc00;
+    color: #fff;
+    
+    
+    border-radius: 40px 40px 40px 40px / 70px 70px 70px 70px;
+    
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: bold;
+    font-size: 2.7rem;
+    padding: 56px 32px 28px 32px; /* Extra top padding for the badge */
+    margin: 36px 0;
+    text-align: center;
+    letter-spacing: 2.5px;
+    z-index: 2;
+    overflow: visible;
+    display: block;
+    position: relative;
+    animation: none;
+    transition: box-shadow 0.2s, border 0.2s;
+}
+
+.flame-new::before {
+    content: "ALL NEW!";
+    position: absolute;
+    left: 50%;
+    top: -28px;
+    transform: translateX(-50%);
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #ff2a00 60%, #ff7a7a 100%);
+    border-radius: 16px;
+    padding: 6px 32px;
+    box-shadow: 0 4px 18px 2px #ff7a7a, 0 0 0 #fff;
+    letter-spacing: 2px;
+    z-index: 4;
+    width: max-content;
+    white-space: nowrap;
+    border: 2px solid #fffbe6;
+}
+
+.flame-new .banner-text {
+    display: block;
+    margin-top: 18px;
+    font-size: 2.4rem;
+    color: #fff;
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 0 #b80000, 0 2px 8px #ff7a7a;
+}
+
+.flame-new .New-price {
+    display: block;
+    margin: 22px auto 0 auto;
+    font-size: 2.5rem;
+    color: #000000;
+    font-weight: bold;
+    
+    border-radius: 10px;
+    padding: 6px 22px;
+    box-shadow: 0 2px 8px rgba(255, 42, 0, 0.18);
+    width: 100px;
+    letter-spacing: 1px;
+    font-style: it
+}
