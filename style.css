@@ -1,4 +1,4 @@
-
+ 
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
 /* General Styles */
@@ -114,16 +114,16 @@ body {
 .category-title {
     
     font-size: 4rem; /* Slightly larger font size */
-    color: #000000; /* White text for contrast */
+    color: #ed0000; /* White text for contrast */
     max-width: 100%;
     margin-bottom: 0px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for depth */
-    background: #f22c05;
+    
     
     border-radius: 13px; /* Rounded corners */
     padding: 2px; /* Add padding for spacing */
     text-align: center; /* Center the text */
-    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5); /* Add a glowing red shadow */
+    
 }
 
 /* Category Title Wrapper */
@@ -273,9 +273,9 @@ body {
 }
 
 .flame-banner {
-    background: linear-gradient(90deg, #fffbe6 60%, #ffd580 100%);
-    color: #b80000;
-    border: 2px solid #ff9900;
+    background: transparent;
+    color: #ffffff;
+    border: 5px dashed #ff2600;
     border-radius: 20px;
     box-shadow: 0 2px 8px rgba(255,153,0,0.10);
     font-weight: bold;
