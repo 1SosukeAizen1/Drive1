@@ -68,7 +68,7 @@ function loadMenu(screenType, containerId) {
                         titleIconWrapper.appendChild(categoryTitle);
 
                         var iconImg = document.createElement("img");
-                        iconImg.src = "/assets/icons/" + encodeURIComponent(category) + ".png";
+                        iconImg.src = "assets/icons/" + encodeURIComponent(category) + ".png";
                         iconImg.alt = category + " icon";
                         iconImg.className = "category-icon";
                         iconImg.onerror = function() { this.style.display = "none"; };
