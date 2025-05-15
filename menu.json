@@ -4,7 +4,7 @@
             {
                 "name": "3 / 5 wings dinner",
                 "desc": "Includes Fries, sauce, Toast & coleslaw and Drink",
-                "price": "$11.99 / $15.99"
+                "price": "$1.99 / $15.99"
             },
             {
                 "name": "3 pc / 5 pc / 12 pc",
@@ -29,6 +29,12 @@
                 "price": "$7.99 / $12.99 / $24.99 "
             }
         ],
+        "Dipping Sauces": {
+            "type": "banner",
+            "text": "BBQ, Ranch, Buffalo, Blue Cheese, Honey Mustard, sweet & sour, Honey BBQ, Sweet Chili, Hab mango, slims sauce",
+            "price": "$0.75"
+        }
+        ,
         "Fish": [
             {
                 "name": "2 / 3 Pc fish dinner",
@@ -40,12 +46,7 @@
                 "desc": "",
                 "price": "$4.99 / $8.99 / $12.99"
             }
-        ],
-        "Dipping Sauces": {
-            "type": "banner",
-            "text": "BBQ, Ranch, Buffalo, Blue Cheese, Honey Mustard, sweet & sour, Honey BBQ, Sweet Chili, Hab mango, slims sauce",
-            "price": "$0.75"
-        }
+        ]
     },
     "drive1/2": {
         "Rice Bowls": [
@@ -60,6 +61,12 @@
                 "price": "Sm $11.99 Lg $13.99"
             }
         ],
+        "Bowl-Sauces": {
+            "type": "banner",
+            "text": "Comes with white, spicy or tzatziki sauce, add extra sauce for",
+            "price": "$0.75"
+        }
+        ,
         "Salads": [
             {
                 "name": "Caesar / Garden Salad",
@@ -83,12 +90,7 @@
                 "desc": " ",
                 "price": "$7.99"
             }
-        ],
-        "Bowl-Sauces": {
-            "type": "banner",
-            "text": "Comes with white, spicy or tzatziki sauce, add extra sauce for",
-            "price": "$0.75"
-        }
+        ]
     },
     "drive2": {
         "Burgers": [
