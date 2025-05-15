@@ -1,84 +1,103 @@
-var screenType = "drive1";
-var secondaryScreenType = "drive1/2";
+// Hardcoded default screen types
+var screenType = "drive1"; // Main menu
+var secondaryScreenType = "drive1/2"; // Secondary menu
 
-function generateMenuHTML(categories) {
-    let html = "";
-
-    for (var category in categories) {
-        if (!categories.hasOwnProperty(category)) continue;
-
-        var items = categories[category];
-
-        // Banner (e.g., combo-banner)
-        if (typeof items === "object" && items.type === "banner") {
-            html += `<div class="menu-banner flame-banner">${items.text || ""}`;
-            if (items.price) {
-                html += `<span class="banner-price"> ${items.price}</span>`;
-            }
-            html += `</div>`;
-            continue;
-        }
-
-        // New Item Banner
-        if (typeof items === "object" && items.type === "New") {
-            html += `<div class="menu-banner flame-new">${items.text || ""}`;
-            if (items.price) {
-                html += `<span class="New-price"> ${items.price}</span>`;
-            }
-            html += `</div>`;
-            continue;
-        }
-
-        html += `<div class="menu-category">`;
-        html += `<div class="category-title-wrapper">`;
-        html += `<h2 class="category-title">${category}</h2>`;
-        html += `<img src="assets/icons/${encodeURIComponent(category)}.png" alt="${category} icon" class="category-icon" onerror="this.style.display='none';" />`;
-        html += `</div>`; // wrapper
-
-        html += `<div class="items-grid">`;
-        for (let i = 0; i < items.length; i++) {
-            const item = items[i];
-            html += `
-                <div class="menu-item">
-                    <div class="item-name">${item.name}</div>
-                    <div class="item-desc">${item.desc}</div>
-                    <div class="item-price">${item.price}</div>
-                </div>
-            `;
-        }
-        html += `</div>`; // items-grid
-        html += `</div>`; // menu-category
-    }
-
-    return html;
-}
-
-function updateIfChanged(container, newHTML) {
-    if (container.getAttribute("data-prev-html") !== newHTML) {
-        container.innerHTML = newHTML;
-        container.setAttribute("data-prev-html", newHTML);
-    }
-}
-
+// Function to load a menu dynamically
 function loadMenu(screenType, containerId) {
-    const container = document.getElementById(containerId);
+    var container = document.getElementById(containerId);
 
-    const xhr = new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
     xhr.open("GET", "menu.json", true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
             try {
-                const data = JSON.parse(xhr.responseText);
-                const categories = data[screenType];
+                var data = JSON.parse(xhr.responseText);
+                var categories = data[screenType]; // Use the specified screen type
+
                 if (!categories) {
-                    container.innerHTML = `<p>No menu available for ${screenType}.</p>`;
+                    container.innerHTML = "<p>No menu available for " + screenType + ".</p>";
                     return;
                 }
 
-                const newHTML = generateMenuHTML(categories);
-                updateIfChanged(container, newHTML);
+                container.innerHTML = ""; // Clear previous content
+
+                // Render menu categories and items
+                for (var category in categories) {
+                    if (categories.hasOwnProperty(category)) {
+                        var items = categories[category];
+
+                        // Handle special banner/vector (e.g., combo-banner)
+                        if (typeof items === "object" && items.type === "banner") {
+                            var bannerDiv = document.createElement("div");
+                            bannerDiv.className = "menu-banner flame-banner";
+                            bannerDiv.textContent = items.text || "";
+                            if (items.price) {
+                                var priceSpan = document.createElement("span");
+                                priceSpan.className = "banner-price";
+                                priceSpan.textContent = " " + items.price;
+                                bannerDiv.appendChild(priceSpan);
+                            }
+                            container.appendChild(bannerDiv);
+                            continue;
+                        }
+                        // Handle special banner/vector (e.g., New item)
+                        if (typeof items === "object" && items.type === "New") {
+                            var newDiv = document.createElement("div");
+                            newDiv.className = "menu-banner flame-new";
+                            newDiv.textContent = items.text || "";
+                            if (items.price) {
+                                var priceSpan = document.createElement("span");
+                                priceSpan.className = "New-price";
+                                priceSpan.textContent = " " + items.price;
+                                newDiv.appendChild(priceSpan);
+                            }
+                            container.appendChild(newDiv);
+                            continue;
+                        }
+                        var categoryDiv = document.createElement("div");
+                        categoryDiv.className = "menu-category";
+                        
+
+                        var titleIconWrapper = document.createElement("div");
+                        titleIconWrapper.className = "category-title-wrapper";
+
+                        var categoryTitle = document.createElement("h2");
+                        categoryTitle.textContent = category;
+                        categoryTitle.className = "category-title";
+                        
+                        titleIconWrapper.appendChild(categoryTitle);
+
+                        var iconImg = document.createElement("img");
+                        iconImg.src = "assets/icons/" + encodeURIComponent(category) + ".png";
+                        iconImg.alt = category + " icon";
+                        iconImg.className = "category-icon";
+                        iconImg.onerror = function() { this.style.display = "none"; };
+                        titleIconWrapper.appendChild(iconImg);
+
+                        categoryDiv.appendChild(titleIconWrapper);
+
+                        var itemsGrid = document.createElement("div");
+                        itemsGrid.className = "items-grid";
+
+                        for (var i = 0; i < items.length; i++) {
+                            var item = items[i];
+                            var itemElement = document.createElement("div");
+                            itemElement.className = "menu-item";
+                        
+                        
+                            itemElement.innerHTML =
+                                '<div class="item-name">' + item.name + '</div>' +
+                                '<div class="item-desc">' + item.desc + '</div>' +
+                                '<div class="item-price">' + item.price + '</div>';
+                            itemsGrid.appendChild(itemElement);
+                        }
+
+                        categoryDiv.appendChild(itemsGrid);
+                        container.appendChild(categoryDiv);
+                    }
+                }
             } catch (e) {
-                console.error("Error parsing menu.json:", e);
+                console.log("Error parsing menu.json:", e);
                 container.innerHTML = "<p>Error loading menu.</p>";
             }
         }
@@ -86,16 +105,22 @@ function loadMenu(screenType, containerId) {
     xhr.send();
 }
 
+// Load both menus on page load
 window.onload = function () {
-    loadMenu(screenType, "menu-items");
-    loadMenu(secondaryScreenType, "secondary-menu-items");
+    loadMenu(screenType, "menu-items"); // Load the main menu
+    loadMenu(secondaryScreenType, "secondary-menu-items"); // Load the secondary menu
 };
 
-document.getElementById("screen-links")?.addEventListener("click", function (event) {
+// Handle screen switching
+document.getElementById("screen-links").addEventListener("click", function (event) {
     if (event.target.classList.contains("screen-link")) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent default link behavior
+
+        // Get the screen and secondary screen from the link's data attributes
         screenType = event.target.dataset.screen;
         secondaryScreenType = event.target.dataset.secondary;
+
+        // Reload the menus
         loadMenu(screenType, "menu-items");
         loadMenu(secondaryScreenType, "secondary-menu-items");
     }
