@@ -6,6 +6,12 @@ var secondaryScreenType = "drive1/2"; // Secondary menu
 function loadMenu(screenType, containerId) {
     var container = document.getElementById(containerId);
 
+    // Prevent reloading the same screen
+    if (container.getAttribute("data-screen-type") === screenType) {
+        return;
+    }
+    container.setAttribute("data-screen-type", screenType);
+
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "menu.json", true);
     xhr.onreadystatechange = function () {
@@ -21,12 +27,11 @@ function loadMenu(screenType, containerId) {
 
                 container.innerHTML = ""; // Clear previous content
 
-                // Render menu categories and items
                 for (var category in categories) {
                     if (categories.hasOwnProperty(category)) {
                         var items = categories[category];
 
-                        // Handle special banner/vector (e.g., combo-banner)
+                        // Handle special banner types
                         if (typeof items === "object" && items.type === "banner") {
                             var bannerDiv = document.createElement("div");
                             bannerDiv.className = "menu-banner flame-banner";
@@ -40,7 +45,7 @@ function loadMenu(screenType, containerId) {
                             container.appendChild(bannerDiv);
                             continue;
                         }
-                        // Handle special banner/vector (e.g., New item)
+
                         if (typeof items === "object" && items.type === "New") {
                             var newDiv = document.createElement("div");
                             newDiv.className = "menu-banner flame-new";
@@ -54,9 +59,12 @@ function loadMenu(screenType, containerId) {
                             container.appendChild(newDiv);
                             continue;
                         }
+
+                        // Skip if items is not an array
+                        if (!Array.isArray(items)) continue;
+
                         var categoryDiv = document.createElement("div");
                         categoryDiv.className = "menu-category";
-                        
 
                         var titleIconWrapper = document.createElement("div");
                         titleIconWrapper.className = "category-title-wrapper";
@@ -64,14 +72,14 @@ function loadMenu(screenType, containerId) {
                         var categoryTitle = document.createElement("h2");
                         categoryTitle.textContent = category;
                         categoryTitle.className = "category-title";
-                        
+
                         titleIconWrapper.appendChild(categoryTitle);
 
                         var iconImg = document.createElement("img");
                         iconImg.src = "assets/icons/" + encodeURIComponent(category) + ".png";
                         iconImg.alt = category + " icon";
                         iconImg.className = "category-icon";
-                        iconImg.onerror = function() { this.style.display = "none"; };
+                        iconImg.onerror = function () { this.style.display = "none"; };
                         titleIconWrapper.appendChild(iconImg);
 
                         categoryDiv.appendChild(titleIconWrapper);
@@ -83,12 +91,12 @@ function loadMenu(screenType, containerId) {
                             var item = items[i];
                             var itemElement = document.createElement("div");
                             itemElement.className = "menu-item";
-                        
-                        
+
                             itemElement.innerHTML =
                                 '<div class="item-name">' + item.name + '</div>' +
                                 '<div class="item-desc">' + item.desc + '</div>' +
                                 '<div class="item-price">' + item.price + '</div>';
+
                             itemsGrid.appendChild(itemElement);
                         }
 
@@ -112,7 +120,7 @@ window.onload = function () {
 };
 
 // Handle screen switching
-document.getElementById("screen-links").addEventListener("click", function (event) {
+document.getElementById("screen-links")?.addEventListener("click", function (event) {
     if (event.target.classList.contains("screen-link")) {
         event.preventDefault(); // Prevent default link behavior
 
