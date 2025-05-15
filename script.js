@@ -19,7 +19,7 @@ function loadMenu(screenType, containerId) {
                     return;
                 }
 
-                container.innerHTML = ""; // Clear previous content
+                
 
                 // Render menu categories and items
                 for (var category in categories) {
