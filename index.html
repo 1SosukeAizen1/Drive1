@@ -1,65 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Slim's Menu</title>
-  <link rel="stylesheet" href="style.css?v=1.0.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slim's Menu</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="stylesheet" href="style.css?v=1.0.0">
 </head>
-<body style="visibility: hidden;" onload="document.body.style.visibility='visible'">
-  <!-- Preload and hide all category icons -->
-  <div id="preloaded-icons" style="display: none;">
-    <img id="icon-Wings" src="assets/icons/Whole%20Wings.png" alt="Wings icon" />
-    <img id="icon-Fish" src="assets/icons/Fish.png" alt="Fish icon" />
-    <img id="icon-Chicken Fingers" src="assets/icons/Chicken%20Fingers.png" alt="Chicken Fingers icon" />
-    <img id="icon-Loaded fries" src="assets/icons/Loaded%20fries.png" alt="Loaded fries icon" />
-    <img id="icon-Dipping Sauces" src="assets/icons/Dipping%20Sauces.png" alt="Dipping Sauces icon" />
-    <img id="icon-Burgers" src="assets/icons/Burgers.png" alt="Burgers icon" />
-    <img id="icon-Fries" src="assets/icons/Fries.png" alt="Fries icon" />
-    <img id="icon-Drinks" src="assets/icons/Drinks.png" alt="Drinks icon" />
-    <img id="icon-Salads" src="assets/icons/Salads.png" alt="Salads icon" />
-    <img id="icon-Desserts" src="assets/icons/Desserts.png" alt="Desserts icon" />
-    <img id="icon-Sides" src="assets/icons/Sides.png" alt="Sides icon" />
-    <!-- Add more <img> tags for each category icon you have -->
-  </div>
+<body>
+    <!-- Preload and hide all category icons -->
+    <div id="preloaded-icons" style="display:none;">
+        <img id="icon-Wings" src="assets/icons/Whole%20Wings.png" alt="Wings icon">
+        <img id="icon-Fish" src="assets/icons/Fish.png" alt="Fish icon">
+        <img id="icon-Chicken Fingers" src="assets/icons/Chicken%20Fingers.png" alt="Chicken Fingers icon">
+        <img id="icon-Loaded fries" src="assets/icons/Loaded%20fries.png" alt="Loaded fries icon">
+        <img id="icon-Dipping Sauces" src="assets/icons/Dipping%20Sauces.png" alt="Dipping Sauces icon">
+        <img id="icon-Burgers" src="assets/icons/Burgers.png" alt="Burgers icon">
+        <img id="icon-Fries" src="assets/icons/Fries.png" alt="Fries icon">
+        <img id="icon-Drinks" src="assets/icons/Drinks.png" alt="Drinks icon">
+        <img id="icon-Salads" src="assets/icons/Salads.png" alt="Salads icon">
+        <img id="icon-Desserts" src="assets/icons/Desserts.png" alt="Desserts icon">
+        <img id="icon-Sides" src="assets/icons/Sides.png" alt="Sides icon">
+        <!-- Add more <img> tags for each category icon you have -->
+    </div>
 
-  <!-- Menu Items -->
-  <div id="menu-items"></div>
-  <!-- Secondary Menu Items -->
-  <div id="secondary-menu-items"></div>
+    <!-- Menu Items -->
+    <div id="menu-items"></div>
+    <!-- Secondary Menu Items -->
+    <div id="secondary-menu-items"></div>
 
-  <script src="script.js?v=1.0.0"></script>
-
-  <!-- Smart Update Checker -->
-  <script>
-    const checkInterval = 60 * 60 * 1000; // every 5 minutes
-    const cssURL = "https://1sosukeaizen1.github.io/Drive1/style.css";
-    const jsURL = "https://1sosukeaizen1.github.io/Drive1/script.js";
-
-    let lastCSSModified = null;
-    let lastJSModified = null;
-
-    async function checkForUpdate(file, lastModified) {
-      try {
-        const response = await fetch(file, { method: 'HEAD' });
-        const currentModified = response.headers.get('last-modified');
-        if (lastModified && currentModified !== lastModified) {
-          console.log(`Update detected in ${file}. Reloading...`);
-          location.reload();
-        }
-        return currentModified;
-      } catch (err) {
-        console.error(`Failed to check ${file}`, err);
-        return lastModified;
-      }
-    }
-
-    async function updateChecker() {
-      lastCSSModified = await checkForUpdate(cssURL, lastCSSModified);
-      lastJSModified = await checkForUpdate(jsURL, lastJSModified);
-    }
-
-    setInterval(updateChecker, checkInterval);
-  </script>
+    <script src="script.js?v=1.0.0"></script>
 </body>
 </html>
