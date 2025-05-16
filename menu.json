@@ -20,7 +20,7 @@
         "Chicken Fingers": [
             {
                 "name": "3/5 finger dinner",
-                "desc": "Includes Fries, sauce Toast & coleslaw and Drink",
+                "desc": "Includes Fries, sauce, Toast & coleslaw and Drink",
                 "price": "$11.49 / $15.99"
             },
             {
@@ -70,7 +70,7 @@
         "Salads": [
             {
                 "name": "Caesar / Garden Salad",
-                "desc": "You can add Crispy chicken, Grilled chicken, steak or gyro for $2.50",
+                "desc": "Add Crispy chicken, Grilled chicken, steak or gyro for $2.50",
                 "price": "$5.99"
             }
         ],
