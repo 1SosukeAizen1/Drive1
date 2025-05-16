@@ -67,22 +67,12 @@ function loadMenu(screenType, containerId) {
                         
                         titleIconWrapper.appendChild(categoryTitle);
 
-                        var iconId = "icon-" + category;
-                        var preloadedIcon = document.getElementById(iconId);
-                        if (preloadedIcon) {
-                            var iconImg = preloadedIcon.cloneNode(true);
-                            iconImg.style.display = "inline-block";
-                            iconImg.removeAttribute("id"); // Prevent duplicate IDs
-                            iconImg.className = "category-icon";
-                            titleIconWrapper.appendChild(iconImg);
-                        } else {
-                            var iconImg = document.createElement("img");
-                            iconImg.src = "assets/icons/" + encodeURIComponent(category) + ".png";
-                            iconImg.alt = category + " icon";
-                            iconImg.className = "category-icon";
-                            iconImg.onerror = function() { this.style.display = "none"; };
-                            titleIconWrapper.appendChild(iconImg);
-                        }
+                        var iconImg = document.createElement("img");
+                        iconImg.src = "assets/icons/" + encodeURIComponent(category) + ".png";
+                        iconImg.alt = category + " icon";
+                        iconImg.className = "category-icon";
+                        iconImg.onerror = function() { this.style.display = "none"; };
+                        titleIconWrapper.appendChild(iconImg);
 
                         categoryDiv.appendChild(titleIconWrapper);
 
