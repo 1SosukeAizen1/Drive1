@@ -270,9 +270,9 @@ body {
     color: #ffffff;
     border: 5px dashed #ff2600;
     border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(255,153,0,0.10);
+    
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     padding: 8px 2px;
     margin: 20px 0;
     text-align: center;
@@ -319,7 +319,7 @@ body {
 }
 
 .flame-new::before {
-    content: "";
+    background: url("assets/icons/Fish\ dinner.png");
     
     position: absolute;
     
