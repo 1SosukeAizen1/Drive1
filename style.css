@@ -251,13 +251,13 @@ body {
     max-height: 30%;
     border-radius: 12px;
     
-    background:transparent;
+    background: transparent;
     
     object-fit: contain;
 }
 .category-title-wrapper .category-icon {
-    max-width: 300px;
-    max-height: 200px;
+    max-width: 310px;
+    max-height: 300px;
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     background: transparent;
