@@ -54,6 +54,9 @@ function loadMenu(screenType, containerId) {
                             container.appendChild(newDiv);
                             continue;
                         }
+                        // Skip writing the category name if it's "Fish dinner"
+                        var showCategoryName = category !== "Fish dinner";
+
                         var categoryDiv = document.createElement("div");
                         categoryDiv.className = "menu-category";
                         
@@ -61,11 +64,12 @@ function loadMenu(screenType, containerId) {
                         var titleIconWrapper = document.createElement("div");
                         titleIconWrapper.className = "category-title-wrapper";
 
-                        var categoryTitle = document.createElement("h2");
-                        categoryTitle.textContent = category;
-                        categoryTitle.className = "category-title";
-                        
-                        titleIconWrapper.appendChild(categoryTitle);
+                        if (showCategoryName) {
+                            var categoryTitle = document.createElement("h2");
+                            categoryTitle.textContent = category;
+                            categoryTitle.className = "category-title";
+                            titleIconWrapper.appendChild(categoryTitle);
+                        }
 
                         var iconImg = document.createElement("img");
                         iconImg.src = "assets/icons/" + encodeURIComponent(category) + ".png";
