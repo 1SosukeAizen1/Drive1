@@ -67,7 +67,7 @@
             "price": "$0.75"
         }
         ,
-        "Salads": [
+        "salads": [
             {
                 "name": "Caesar / Garden Salad",
                 "desc": "Add Crispy chicken, Grilled chicken, steak or gyro for $2.50",
