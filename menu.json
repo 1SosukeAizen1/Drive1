@@ -91,9 +91,23 @@
                 "price": "$7.99"
             }
         ],
-        "Fish dinner":{
-
-        }
+        "Loaded fries": [
+            {
+                "name": "Buffalo chicken Fries",
+                "desc": "",
+                "price": ""
+            },
+            {
+                "name": "Gyro Cheese Fries",
+                "desc": "",
+                "price": "$9.99"
+            },
+            {
+                "name": "CheeseBurger Fries",
+                "desc": "",
+                "price": "$8.99"
+            }
+        ]
     },
     "drive2": {
         "Burgers": [
@@ -208,23 +222,7 @@
     },
     "drive3": {
         
-        "Loaded fries": [
-            {
-                "name": "Buffalo chicken Fries",
-                "desc": "",
-                "price": "$9.99"
-            },
-            {
-                "name": "Gyro Cheese Fries",
-                "desc": "",
-                "price": "$9.99"
-            },
-            {
-                "name": "CheeseBurger Fries",
-                "desc": "",
-                "price": "$8.99"
-            }
-        ]
+        
         
     },
     "drive3/2": {
