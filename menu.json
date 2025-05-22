@@ -96,11 +96,11 @@
                 "name": "Limited Offer",
                 "desc": "",
                 "price": ""
-            
+            },
             {
-                "name": "5 pc / 10 pc / 15 pc",
+                "name": "5 pc / 10 pc ",
                 "desc": "ADD $2 for a dinner",
-                "price": "$5.99 / $9.99 / $14.99"
+                "price": "$5.99 / $9.99 "
             }
         ]
     },
