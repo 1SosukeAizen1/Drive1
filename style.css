@@ -163,7 +163,7 @@ body {
 
 
 .item-name {
-    font-size: 3rem;
+    font-size: 3.3rem;
     color: #ffe600;
     padding-inline: 1px;
     padding-top:10px;
@@ -171,7 +171,7 @@ body {
 }
 
 .item-desc {
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #ddd;
     font-style: italic;
     font-weight: light;
@@ -179,7 +179,7 @@ body {
 }
 
 .item-price {
-    font-size: 2.9rem;
+    font-size: 3.2rem;
     color: #ffffff;
     font-weight: bold;
     padding-inline: 10px;
