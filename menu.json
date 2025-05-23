@@ -2,9 +2,9 @@
     "drive1": {
         "Whole Wings": [
             {
-                "name": "3 / 5 wings dinner",
+                "name": "wings dinner",
                 "desc": "Includes Fries, sauce, Toast & coleslaw and Drink",
-                "price": "$11.99 / $15.99"
+                "price": "3 pc $11.99 , 5 PC $15.99"
             },
             {
                 "name": "3 pc / 5 pc / 12 pc",
@@ -19,9 +19,9 @@
         ],
         "Chicken Fingers": [
             {
-                "name": "3/5 finger dinner",
+                "name": "finger dinner",
                 "desc": "Includes Fries, sauce, Toast & coleslaw and Drink",
-                "price": "$11.49 / $15.99"
+                "price": "3 pc $11.49 , 5 pc $15.99"
             },
             {
                 "name": "3 pc / 5 pc / 12 pc",
@@ -37,9 +37,9 @@
         ,
         "Fish": [
             {
-                "name": "2 / 3 Pc fish dinner",
+                "name": "fish dinner",
                 "desc": "",
-                "price": "$12.99 / $16.99"
+                "price": "2 pc $12.99 , 3 pc $16.99"
             },
             {
                 "name": "1 pc / 2 pc / 3 pc",
@@ -92,15 +92,16 @@
             }
         ],
         "Tossed wings":[    
+            
             {
-                "name": "Limited Offer",
+                "name": "Dinner ",
                 "desc": "",
-                "price": ""
+                "price": "5 Pc $7.99 , 10 pc $11.99 "
             },
             {
-                "name": "5 pc / 10 pc ",
-                "desc": "ADD $2 for a dinner",
-                "price": "$5.99 / $9.99 "
+                "name": "Just chicken",
+                "desc": "",
+                "price": "5 pc $5.99 , 10 pc $9.99"
             }
         ]
     },
