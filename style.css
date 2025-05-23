@@ -113,7 +113,7 @@ body {
 /* Category Title */
 .category-title {
     
-    font-size: 4rem; /* Slightly larger font size */
+    font-size: 3.9rem; /* Slightly larger font size */
     color: #ed0000; /* White text for contrast */
     max-width: 100%;
     margin-bottom: 0px;
@@ -164,7 +164,7 @@ body {
 
 
 .item-name {
-    font-size: 2.8rem;
+    font-size: 3.1rem;
     color: #ffe600;
     padding-inline: 1px;
     padding-top:10px;
@@ -172,7 +172,7 @@ body {
 }
 
 .item-desc {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     color: #ddd;
     font-style: italic;
     font-weight: light;
@@ -180,7 +180,7 @@ body {
 }
 
 .item-price {
-    font-size: 2.9rem;
+    font-size: 3rem;
     color: #ffffff;
     font-weight: bold;
     padding-inline: 10px;
@@ -257,7 +257,7 @@ body {
     object-fit: contain;
 }
 .category-title-wrapper .category-icon {
-    max-width: 350px;
+    max-width: 320px;
     max-height: 300px;
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
@@ -273,7 +273,7 @@ body {
     border-radius: 20px;
     
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding: 7px;
     margin: 10px 0;
     text-align: center;

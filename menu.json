@@ -78,12 +78,12 @@
             {
                 "name": "kids burger",
                 "desc": "",
-                "price": "$7.99"
+                "price": ""
             },
             {
                 "name": "Grilled Cheese",
                 "desc": "",
-                "price": "7.99"
+                "price": ""
             },
             {
                 "name": "2 pc fingers",
@@ -98,14 +98,9 @@
                 "price": ""
             },
             {
-                "name": "5 / 10 pc dinner",
-                "desc": "",
-                "price": "$7.99 / $11.99"
-            },
-            {
-                "name": "5 pc / 10 pc / 15 pc",
-                "desc": "",
-                "price": "$5.99 / $9.99 / $14.99"
+                "name": "5 pc / 10 pc ",
+                "desc": "ADD $2 for a dinner",
+                "price": "$5.99 / $9.99 "
             }
         ]
     },
