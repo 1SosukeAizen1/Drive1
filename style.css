@@ -4,7 +4,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background: url("assets/background/background.jpg") no-repeat center center fixed;
+    background-size: cover !important;
     font-family: 'Luckiest Guy', cursive;
     color: #000000;
     overflow: hidden; /* Prevent scrolling */
@@ -359,5 +360,30 @@ body {
     font-style: it
 }
 
+
+
+/* Remove or set to transparent any background on menu containers */
+#menu-items,
+#secondary-menu-items,
+.menu-category,
+.menu-item,
+.items-grid {
+    background: transparent !important;
+}
+
+/* Remove background from .menu-category if present */
+.menu-category {
+    background: transparent !important;
+}
+
+/* Remove background from .menu-item if present */
+.menu-item {
+    background: transparent !important;
+}
+
+/* Remove background from .items-grid if present */
+.items-grid {
+    background: transparent !important;
+}
 
 
