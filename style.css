@@ -14,7 +14,7 @@ body {
 
 /* Menu Items Container */
 #menu-items {
-    padding-top: 10px;
+    padding-top: 5px;
     position: absolute;
     top: 0; /* Align the menu to the top */
     left: 0;
@@ -257,12 +257,12 @@ body {
     object-fit: contain;
 }
 .category-title-wrapper .category-icon {
-    max-width: 320px;
+    max-width: 350px;
     max-height: 300px;
     border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+   
     background: transparent;
-    padding-top: 15px;
+    padding-top: 0px;
     object-fit: contain;
 }
 
