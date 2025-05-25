@@ -273,8 +273,8 @@ body {
     border-radius: 20px;
     
     font-weight: bold;
-    font-size: 2.3rem;
-    padding: 7px;
+    font-size: 2.6rem;
+    padding: 2px;
     margin: 10px 0;
     text-align: center;
     letter-spacing: 1px;
@@ -287,7 +287,7 @@ body {
 .flame-banner .banner-price{
     display: block;
     margin: 10px auto 0 auto;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     color: #ffffff;
     font-weight: bold;
     
