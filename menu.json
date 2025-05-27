@@ -49,6 +49,23 @@
         ]
     },
     "drive1/2": {
+        "Loaded fries": [
+            {
+                "name": "Buffalo chicken Fries",
+                "desc": "",
+                "price": ""
+            },
+            {
+                "name": "Gyro Cheese Fries",
+                "desc": "",
+                "price": "$9.99"
+            },
+            {
+                "name": "CheeseBurger Fries",
+                "desc": "",
+                "price": "$8.99"
+            }
+        ],
         "Rice Bowls": [
             {
                 "name": "Chicken / Gyro / Combo(both)",
@@ -69,8 +86,8 @@
         ,
         "salads": [
             {
-                "name": "Caesar / Garden Salad",
-                "desc": "Add Crispy chicken, Grilled chicken, steak or gyro for $2.50",
+                "name": "Caesar / Garden ",
+                "desc": "Add meat for $2.50",
                 "price": "$5.99"
             }
         ],
@@ -90,161 +107,7 @@
                 "desc": " ",
                 "price": "$7.99"
             }
-        ],
-        "Tossed wings":[    
-            
-            {
-                "name": "Dinner ",
-                "desc": "",
-                "price": "5 Pc $7.99 , 10 pc $11.99 "
-            },
-            {
-                "name": "Just chicken",
-                "desc": "",
-                "price": "5 pc $5.99 , 10 pc $9.99"
-            }
-        ]
-    },
-    "drive2": {
-        "Burgers": [
-            {
-                "name": "Slims burger",
-                "desc": "Cheese, Lettuce, Tomatoes, onions, Pickles and Sauce",
-                "price": "Sgl $5.99  Dbl $7.99 "
-            },
-            {
-                "name": "Busy burger",
-                "desc": "white american, grilled onions and busy sauce",
-                "price": "Sgl $5.99  Dbl $7.99"
-            },
-            {
-                "name": "Gyro burger",
-                "desc": "",
-                "price": "Sgl $7.99  Dbl $9.99"
-            },
-            {
-                "name": "Special Burgers",
-                "desc": " Carolina - Bacon - Mush & Swiss - Veggie - Patty Melt - Sirloin Steak ",
-                "price": ""
-            }
-        ],
-        "Sandwiches": [
-            {
-                "name": "Gyro",
-                "desc": "Make it spicy for $0.50",
-                "price": "$7.99"
-            }
-            ,
-            {
-                "name": "Crispy / grilled Sandwich",
-                "desc": "",
-                "price": "$7.99"
-            },
-            {
-                "name": "Fish Sandwich",
-                "desc": "",
-                "price": "$6.99"
-            },
-            
-            {
-                "name": "Philly CheeseSteak",
-                "desc": "",
-                "price": "$11.99"
-            }
-        ]
-    },
-    "drive2/2": {
-        "All new":{ 
-            "type": "New",
-            "text": "",
-            "price": ""
-        },
-        "Ruben": [
-            {
-                "name": " ",
-                "desc": "Corned-Beef, Swiss cheese, sauerkraut and thousand island dressing on grilled rye bread",
-                "price": "$7.99"
-            }
-        ],
-        "combo-banner": {
-            "type": "banner",
-            "text": "Combo: fries & Soda", 
-            "price": "$5.99"
-        }
-        ,
-        "Sides": [
-            {
-                "name": "Crispy Fries",
-                "desc": "",
-                "price": "Sm $2.99 Lg $3.99 "
-            },
-            {
-                "name": "Handcut Fries",
-                "desc": "",
-                "price": "Sm $3.49 Lg $4.49"
-            },
-            {
-                "name": "Cheese Fries",
-                "desc": "",
-                "price": "$4.99"
-            },
-            {
-                "name": "Chili Cheese Fries",
-                "desc": "",
-                "price": "$5.99"
-            },
-            {
-                "name": "Onion Rings",
-                "desc": " ",
-                "price": "Sm $3.99    Lg $5.99"
-            },
-            {
-                "name": "Cheese curds",
-                "desc": "",
-                "price": "Sm $5.99    Lg $8.49"
-            },
-            {
-                "name": "Sweet Potato fries",
-                "desc": "",
-                "price": "Sm $3.49    Lg $4.99"
-            },
-            {
-                "name": "Mashed potatoes",
-                "desc": "",
-                "price": "Sm $2.39 Lg $3.49"
-            }
         ]
         
-    },
-    "drive3": {
-        
-        
-        
-    },
-    "drive3/2": {
-        "Sodas": [
-            {
-                "name": "Pepsi Products",
-                "desc": "Pepsi, diet pepsi, Mt. Dew, dr. pepper, orange crush, root beer, fruit punch, pink lemonade, iced tea",
-                "price": "$2.69"
-            }
-        ],
-        "Shakes $ Malts": [
-            {
-                "name": "Flavors",
-                "desc": "vanilla, Chocolate, Strawberry, Banana, Oreo, PeanutButter, Mango, caramel",
-                "price": "Sm $4.99 Lg $5.99"
-            },
-            {
-                "name": "Monthly Shake ",
-                "desc": "Resse's Candies",
-                "price": ""
-            },
-            {
-                "name": "",
-                "desc": "Add extra flavor",
-                "price": "$0.75"
-            }
-        ]
     }
 }
