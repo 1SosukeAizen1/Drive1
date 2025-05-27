@@ -51,12 +51,12 @@
     "drive1/2": {
         "Loaded fries": [
             {
-                "name": "Buffalo chicken Fries",
+                "name": "Buffalo chicken",
                 "desc": "",
                 "price": ""
             },
             {
-                "name": "Gyro Cheese Fries",
+                "name": "Gyro Cheese",
                 "desc": "",
                 "price": "$9.99"
             },
