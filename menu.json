@@ -93,19 +93,24 @@
         ],
         "Kids Meals": [
             {
-                "name": "kids burger",
+                "name": "Comes with fries and drink",
                 "desc": "",
-                "price": ""
-            },
-            {
-                "name": "Grilled Cheese",
-                "desc": "",
-                "price": ""
-            },
-            {
-                "name": "2 pc fingers",
-                "desc": " ",
                 "price": "$7.99"
+            },
+            {
+                "name": "",
+                "desc": "kids burger",
+                "price": ""
+            },
+            {
+                "name": "",
+                "desc": "Grilled Cheese",
+                "price": ""
+            },
+            {
+                "name": "",
+                "desc": "2 pc fingers",
+                "price": ""
             }
         ]
         
