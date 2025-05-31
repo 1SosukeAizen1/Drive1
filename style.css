@@ -266,7 +266,7 @@ body {
 .flame-banner {
     background: transparent;
     color: #ffffff;
-    border: 5px dashed #f70000; /* Updated red */
+    border: 10px dashed #f70000; /* Updated red */
     border-radius: 20px;
     font-size: 2.5rem;
     padding: 3px;
