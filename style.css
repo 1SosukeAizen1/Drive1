@@ -112,14 +112,11 @@ body {
 }
 /* Category Title */
 .category-title {
-    
     font-size: 3.9rem; /* Slightly larger font size */
-    color: #ed0000; /* White text for contrast */
+    color: #f70000; /* Updated red */
     max-width: 100%;
     margin-bottom: 0px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for depth */
-    
-    
     border-radius: 13px; /* Rounded corners */
     padding: 2px; /* Add padding for spacing */
     text-align: center; /* Center the text */
@@ -165,7 +162,7 @@ body {
 
 .item-name {
     font-size: 3.1rem;
-    color: #ffe600;
+    color: #ffe500; /* Updated yellow */
     padding-inline: 1px;
     padding-top:10px;
     
@@ -213,7 +210,7 @@ body {
 }
 
 .menu-category.secondary {
-    border: 2px solid #ff2a00; /* Highlighted border */
+    border: 2px solid #f70000; /* Updated red */
     margin-bottom: 10px;
     padding: 10px;
     
@@ -222,7 +219,7 @@ body {
 
 .category-title.secondary {
     font-size: 2rem; /* Slightly smaller font size for secondary menu */
-    color: #ffcc00;
+    color: #ffe500; /* Updated yellow */
     
 }
 
@@ -269,10 +266,8 @@ body {
 .flame-banner {
     background: transparent;
     color: #ffffff;
-    border: 5px dashed #ff2600;
+    border: 5px dashed #f70000; /* Updated red */
     border-radius: 20px;
-    
-    
     font-size: 2.5rem;
     padding: 5px;
     margin: 5px 0;
@@ -342,7 +337,7 @@ body {
     outline: none;
     text-align: center;
     letter-spacing: 1.5px;
-    text-shadow: 1px 1px 0 #b80000, 0 2px 8px #ff7a7a;
+    text-shadow: 1px 1px 0 #f70000, 0 2px 8px #f70000; /* Updated reds */
 }
 
 .flame-new .New-price {
@@ -387,3 +382,21 @@ body {
 }
 
 
+/* Add shadow to all texts */
+body,
+.category-title,
+.item-name,
+.item-desc,
+.item-price,
+.flame-banner,
+.flame-banner .banner-price,
+.flame-new,
+.flame-new .banner-text,
+.flame-new .New-price,
+.menu-category,
+.menu-item,
+.menu-category.secondary,
+.menu-item.secondary,
+.category-title.secondary {
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7) !important;
+}
