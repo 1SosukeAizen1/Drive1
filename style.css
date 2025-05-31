@@ -268,9 +268,9 @@ body {
     color: #ffffff;
     border: 10px dashed #f70000; /* Updated red */
     
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     padding: 3px;
-    margin: 7px;
+    margin: 5px;
     text-align: center;
     letter-spacing: 1px;
     z-index: 2;
