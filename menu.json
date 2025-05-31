@@ -77,6 +77,12 @@
                 "desc": "",
                 "price": "Sm $11.99 Lg $13.99"
             }
+            ,
+            {
+                "name": "BBQ Chicken Bowl",
+                "desc": "",
+                "price": "Sm $11.99 Lg $13.99"
+            }
         ],
         "Bowl-Sauces": {
             "type": "banner",
