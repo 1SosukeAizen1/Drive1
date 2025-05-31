@@ -93,8 +93,8 @@
         ],
         "Kids Meals": [
             {
-                "name": "Comes with fries and drink",
-                "desc": "",
+                "name": "",
+                "desc": "Comes with fries and drink",
                 "price": "$7.99"
             },
             {
