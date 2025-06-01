@@ -161,10 +161,10 @@ body {
 
 
 .item-name {
-    font-size: 2.7rem;
+    font-size: 2.9rem;
     color: #ffe500; /* Updated yellow */
-    padding-inline: 1px;
-    padding-top:10px;
+    padding-inline: 5px;
+    padding-top:5px;
     
     
 }
@@ -178,7 +178,7 @@ body {
 }
 
 .item-price {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     color: #ffffff;
     font-weight: bold;
     padding-inline: 10px;
@@ -255,8 +255,8 @@ body {
     object-fit: contain;
 }
 .category-title-wrapper .category-icon {
-    max-width: 350px;
-    max-height: 300px;
+    max-width: 450px;
+    max-height: 350px;
     border-radius: 14px;
    
     background: transparent;

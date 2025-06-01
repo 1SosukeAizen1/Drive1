@@ -114,6 +114,14 @@
                 "desc": "",
                 "price": "$7.99"
             }
+        ],
+        "buffalo wings":[
+            {
+                "name": "",
+                "desc": "tossed in BBQ, BUFFALO, HABANERO MANGO, SWEET CHILI OR HONEY BBQ",
+                "price": ""
+            }
+            
         ]
     },
     "drive1/2": {
@@ -140,17 +148,17 @@
             },
             
             {
-                "name": "3 fingers ",
+                "name": "3 pc fingers ",
                 "desc": "",
                 "price": "$7.99 "
             },
             {
-                "name": "5 fingers",
+                "name": "5 pc fingers",
                 "desc": "",
                 "price": "$12.99"
             },
             {
-                "name": "12 fingers",
+                "name": "12 pc fingers",
                 "desc": "",
                 "price": "$24.99"
             }
