@@ -112,10 +112,10 @@ body {
 }
 /* Category Title */
 .category-title {
-    font-size: 3.9rem; /* Slightly larger font size */
+    font-size: 4rem; /* Slightly larger font size */
     color: #f70000; /* Updated red */
     max-width: 100%;
-    margin-bottom: 0px;
+    margin: 2px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a shadow for depth */
     border-radius: 13px; /* Rounded corners */
     padding: 2px; /* Add padding for spacing */
