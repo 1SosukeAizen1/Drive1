@@ -6,6 +6,30 @@
     <title>Slim's Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+const GITHUB_API_URL = "https://api.github.com/repos/1sosukeaizen1/Drive1/commits?sha=main";
+let lastCommit = null;
+
+async function checkForUpdate() {
+    try {
+        const response = await fetch(GITHUB_API_URL, { cache: "no-store" });
+        const data = await response.json();
+        if (data && data[0] && data[0].sha) {
+            if (!lastCommit) {
+                lastCommit = data[0].sha;
+            } else if (lastCommit !== data[0].sha) {
+                location.reload(true);
+            }
+        }
+    } catch (e) {
+        // Optionally handle errors
+    }
+}
+
+setInterval(checkForUpdate, 30000); // Check every 30 seconds
+checkForUpdate();
+</script>
+
 
 <body>
  

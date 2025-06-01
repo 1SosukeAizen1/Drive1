@@ -2,88 +2,95 @@
     "drive1": {
         "Whole Wings": [
             {
-                "name": "wings dinner",
-                "desc": "Includes Fries, sauce, Toast & coleslaw and Drink",
-                "price": "3 pc $11.99 , 5 PC $15.99"
-            },
-            {
-                "name": "3 pc / 5 pc / 12 pc",
-                "desc": "",
-                "price": "$7.99 / $12.99 / $24.99 "
-            },
-            {
-                "name": "18 pc / 25 pc / 50 pc",
-                "desc": "",
-                "price": " $34.99 / $44.99 / $89.99"
-            }
-        ],
-        "Chicken Fingers": [
-            {
-                "name": "finger dinner",
-                "desc": "Includes Fries, sauce, Toast & coleslaw and Drink",
-                "price": "3 pc $11.49 , 5 pc $15.99"
-            },
-            {
-                "name": "3 pc / 5 pc / 12 pc",
-                "desc": "",
-                "price": "$7.99 / $12.99 / $24.99 "
-            }
-        ],
-        "Dipping Sauces": {
-            "type": "banner",
-            "text": "BBQ, Ranch, Buffalo, Blue Cheese, Honey Mustard, sweet & sour, Honey BBQ, Sweet Chili, Hab mango, slims sauce",
-            "price": "$0.75"
-        }
-        ,
-        "Fish": [
-            {
-                "name": "fish dinner",
-                "desc": "",
-                "price": "2 pc $12.99 , 3 pc $16.99"
-            },
-            {
-                "name": "1 pc / 2 pc / 3 pc",
-                "desc": "",
-                "price": "$4.99 / $8.99 / $12.99"
-            }
-        ]
-    },
-    "drive1/2": {
-        "Loaded fries": [
-            {
-                "name": "Buffalo chicken",
-                "desc": "",
+                "name": "",
+                "desc": "Dinner includes fries, toast, coleslaw, and a drink",
                 "price": ""
             },
             {
-                "name": "OR Gyro Cheese",
+                "name": "3 wings dinner",
                 "desc": "",
-                "price": "$9.99"
+                "price": "$11.99"
             },
             {
-                "name": "CheeseBurger Fries",
+                "name": "5 wings dinner",
+                "desc": "",
+                "price": "$15.99"
+            },
+            {
+                "name": "",
+                "desc": "",
+                "price": "Just wings"
+            },
+            
+            {
+                "name": "3 wings ",
+                "desc": "",
+                "price": "$7.99 "
+            },
+            {
+                "name": "5 wings",
+                "desc": "",
+                "price": "$12.99"
+            },
+            {
+                "name": "12 wings",
+                "desc": "",
+                "price": "$24.99"
+            },
+            {
+                "name": "18 wings",
+                "desc": "",
+                "price": "$34.99"
+            },
+            {
+                "name": "25 wings",
+                "desc": "",
+                "price": "$44.99"
+            },
+            {
+                "name": "50 wings",
+                "desc": "",
+                "price": "$89.99"
+            }
+        ]
+        ,
+        "Fish": [
+            {
+                "name": "",
+                "desc": "Dinner includes fries, toast, coleslaw, and a drink",
+                "price": ""
+            },
+            {
+                "name": "2 fish dinner",
+                "desc": "",
+                "price": "$12.99"
+            },
+            {
+                "name": "3 fish dinner",
+                "desc": "",
+                "price": "$16.99"
+            },
+            {
+                "name": "",
+                "desc": "",
+                "price": "Just fish"
+            },
+            {
+                "name": "1 pc fish",
+                "desc": "",
+                "price": "$4.99"
+            },
+            {
+                "name": "2 pc fish",
                 "desc": "",
                 "price": "$8.99"
-            }
-        ],
-        "Rice Bowls": [
-            {
-                "name": "Chicken / Gyro / Combo(both)",
-                "desc": "Rice, Lettuce, Meat and sauce",
-                "price": "Sm $10.99   Lg $12.99"
             },
             {
-                "name": "Steak Bowl",
+                "name": "3 pc fish",
                 "desc": "",
-                "price": "Sm $11.99 Lg $13.99"
+                "price": "$12.99"
             }
         ],
-        "Bowl-Sauces": {
-            "type": "banner",
-            "text": "Comes with white, spicy or tzatziki sauce, add extra sauce for",
-            "price": "$0.75"
-        }
-        ,
         "salads": [
             {
                 "name": "Caesar / Garden ",
@@ -93,26 +100,109 @@
         ],
         "Kids Meals": [
             {
-                "name": "",
-                "desc": "Comes with fries and drink",
+                "name": "kids burger",
+                "desc": "",
                 "price": "$7.99"
             },
             {
-                "name": "",
-                "desc": "kids burger",
-                "price": ""
+                "name": "Grilled Cheese",
+                "desc": "",
+                "price": "$7.99"
             },
             {
-                "name": "",
-                "desc": "Grilled Cheese",
-                "price": ""
-            },
-            {
-                "name": "",
-                "desc": "2 pc fingers",
-                "price": ""
+                "name": "2 pc fingers",
+                "desc": "",
+                "price": "$7.99"
             }
         ]
+    },
+    "drive1/2": {
+        "Chicken Fingers": [
+            {
+                "name": "",
+                "desc": "Dinner includes fries, toast, coleslaw, and a drink",
+                "price": ""
+            },
+            {
+                "name": "3 finger dinner",
+                "desc": "",
+                "price": "$11.99"
+            },
+            {
+                "name": "5 finger dinner",
+                "desc": "",
+                "price": "$15.99"
+            },
+            {
+                "name": "",
+                "desc": "",
+                "price": "Just fingers"
+            },
+            
+            {
+                "name": "3 fingers ",
+                "desc": "",
+                "price": "$7.99 "
+            },
+            {
+                "name": "5 fingers",
+                "desc": "",
+                "price": "$12.99"
+            },
+            {
+                "name": "12 fingers",
+                "desc": "",
+                "price": "$24.99"
+            }
+        ],
+        
+        
+        "Dipping Sauces": {
+            "type": "banner",
+            "text": "BBQ, Ranch, Buffalo, Blue Cheese, Honey Mustard, sweet & sour, Honey BBQ, Sweet Chili, Hab mango, slims sauce",
+            "price": "$0.75"
+        },
+        "Loaded fries": [
+            {
+                "name": "Buffalo chicken",
+                "desc": "",
+                "price": "$9.99"
+            },
+            {
+                "name": "Gyro Cheese",
+                "desc": "",
+                "price": "$9.99"
+            },
+            {
+                "name": "CheeseBurger ",
+                "desc": "",
+                "price": "$8.99"
+            }
+        ],
+        "Rice Bowls": [
+            {
+                "name": "",
+                "desc": "rice, lettuce and sauce",
+                "price": ""
+            },
+            {
+                "name": "Chicken, Gyro or both",
+                "desc": "",
+                "price": "Sm $10.99   Lg $12.99"
+            },
+            
+            {
+                "name": "Steak Bowl",
+                "desc": "",
+                "price": "Sm $11.99 Lg $13.99"
+            },
+            {
+                "name": "BBQ Chicken Bowl",
+                "desc": "",
+                "price": "Sm $10.99 Lg $12.99"
+            }
+        ]
+        
         
     }
 }

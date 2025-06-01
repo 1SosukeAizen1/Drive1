@@ -161,15 +161,16 @@ body {
 
 
 .item-name {
-    font-size: 3.1rem;
+    font-size: 2.7rem;
     color: #ffe500; /* Updated yellow */
     padding-inline: 1px;
     padding-top:10px;
     
+    
 }
 
 .item-desc {
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #ddd;
     font-style: italic;
     font-weight: light;
@@ -177,7 +178,7 @@ body {
 }
 
 .item-price {
-    font-size: 3rem;
+    font-size: 2.7rem;
     color: #ffffff;
     font-weight: bold;
     padding-inline: 10px;
@@ -267,7 +268,7 @@ body {
     background: transparent;
     color: #ffffff;
     border: 10px dashed #f70000; /* Updated red */
-    border-radius: 20px;
+    
     font-size: 2.5rem;
     padding: 3px;
     margin-bottom: 3px;
@@ -400,3 +401,26 @@ body,
 .category-title.secondary {
     text-shadow: 2px 2px 6px rgba(0,0,0,0.7) !important;
 }
+
+.menu-item.inline {
+    display: block; /* Remove flex */
+    text-align: left;
+    padding-left: 16px;
+}
+
+.menu-item.inline .item-name,
+.menu-item.inline .item-price {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 8px 0 0;
+    /* Prevent wrapping between name and price */
+    white-space: nowrap;
+}
+
+.menu-item.inline .item-price {
+    float: right;
+    padding-right: 16px;
+    text-align: right;
+}
+

@@ -1,6 +1,8 @@
 // Hardcoded default screen types
 var screenType = "drive1"; // Main menu
 var secondaryScreenType = "drive1/2"; // Secondary menu
+
+
 // Function to load a menu dynamically
 function loadMenu(screenType, containerId) {
     var container = document.getElementById(containerId);
@@ -36,6 +38,13 @@ function loadMenu(screenType, containerId) {
                                 priceSpan.textContent = " " + items.price;
                                 bannerDiv.appendChild(priceSpan);
                             }
+                            // Add support for text1
+                            if (items.text1) {
+                                var text1Div = document.createElement("div");
+                                text1Div.className = "banner-text1";
+                                text1Div.textContent = items.text1;
+                                bannerDiv.appendChild(text1Div);
+                            }
                             container.appendChild(bannerDiv);
                             continue;
                         }
@@ -53,9 +62,6 @@ function loadMenu(screenType, containerId) {
                             container.appendChild(newDiv);
                             continue;
                         }
-                        // Skip writing the category name if it's "Fish dinner"
-                        var showCategoryName = category !== "Fish dinner";
-
                         var categoryDiv = document.createElement("div");
                         categoryDiv.className = "menu-category";
                         
@@ -63,12 +69,11 @@ function loadMenu(screenType, containerId) {
                         var titleIconWrapper = document.createElement("div");
                         titleIconWrapper.className = "category-title-wrapper";
 
-                        if (showCategoryName) {
-                            var categoryTitle = document.createElement("h2");
-                            categoryTitle.textContent = category;
-                            categoryTitle.className = "category-title";
-                            titleIconWrapper.appendChild(categoryTitle);
-                        }
+                        var categoryTitle = document.createElement("h2");
+                        categoryTitle.textContent = category;
+                        categoryTitle.className = "category-title";
+                        
+                        titleIconWrapper.appendChild(categoryTitle);
 
                         var iconImg = document.createElement("img");
                         iconImg.src = "assets/icons/" + encodeURIComponent(category) + ".png";
@@ -86,12 +91,27 @@ function loadMenu(screenType, containerId) {
                             var item = items[i];
                             var itemElement = document.createElement("div");
                             itemElement.className = "menu-item";
-                        
-                        
-                            itemElement.innerHTML =
-                                '<div class="item-name">' + item.name + '</div>' +
-                                '<div class="item-desc">' + item.desc + '</div>' +
-                                '<div class="item-price">' + item.price + '</div>';
+
+                            // Check if item.desc exists and is not empty
+                            if (item.desc && item.desc.trim() !== "") {
+                                itemElement.innerHTML =
+                                    '<div class="item-name">' + item.name + '</div>' +
+                                    '<div class="item-desc">' + item.desc + '</div>' +
+                                    '<div class="item-price">' + item.price + '</div>';
+                            } else {
+                                // If price contains any letter (text), keep new line
+                                if (/[a-zA-Z]/.test(item.price)) {
+                                    itemElement.innerHTML =
+                                        '<div class="item-name">' + item.name + '</div>' +
+                                        '<div class="item-price">' + item.price + '</div>';
+                                } else {
+                                    // No description and price is just a number: put name and price in a flex row
+                                    itemElement.classList.add('inline');
+                                    itemElement.innerHTML =
+                                        '<span class="item-name">' + item.name + '</span>' +
+                                        '<span class="item-price">' + item.price + '</span>';
+                                }
+                            }
                             itemsGrid.appendChild(itemElement);
                         }
 
@@ -108,7 +128,7 @@ function loadMenu(screenType, containerId) {
     xhr.send();
 }
 
-// Load both menus on page load
+// Load all menus on page load
 window.onload = function () {
     loadMenu(screenType, "menu-items"); // Load the main menu
     loadMenu(secondaryScreenType, "secondary-menu-items"); // Load the secondary menu
@@ -128,3 +148,4 @@ document.getElementById("screen-links").addEventListener("click", function (even
         loadMenu(secondaryScreenType, "secondary-menu-items");
     }
 });
+
