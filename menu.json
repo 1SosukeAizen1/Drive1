@@ -7,6 +7,12 @@
                 "price": "3 pc $11.99 , 5 PC $15.99"
             },
             {
+                "name": "just chicken",
+                "desc": "",
+                "price": ""
+            },
+        
+            {
                 "name": "3 pc / 5 pc / 12 pc",
                 "desc": "",
                 "price": "$7.99 / $12.99 / $24.99 "
