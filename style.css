@@ -412,7 +412,7 @@ body,
 .menu-item.inline .item-price {
     display: inline-block;
     vertical-align: middle;
-    margin: 0;
+    margin-right: 10px;
     padding: 0 8px 0 0;
     /* Prevent wrapping between name and price */
     white-space: nowrap;
