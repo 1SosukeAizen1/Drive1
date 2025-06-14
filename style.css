@@ -175,6 +175,7 @@ body {
     font-style: italic;
     font-weight: light;
     padding-inline: 10px;
+    background-color: #f70000;
 }
 
 .item-price {
@@ -265,34 +266,29 @@ body {
 }
 
 .flame-banner {
-    background: transparent;
-    color: #ffffff;
-    border: 10px dashed #f70000; /* Updated red */
-    
-    font-size: 2.5rem;
-    padding: 3px;
-    margin: 8px;
+    background: linear-gradient(90deg, #ffe600, #ff9900);
+    color: #b80000;
+    border: 8px dashed #ff0000;
+    font-size: 2.8rem;
+    padding: 10px 20px;
+    margin: 16px auto;
     text-align: center;
-    letter-spacing: 1px;
-    z-index: 2;
-    overflow: visible;
-    display: block;
-    animation: none;
+    letter-spacing: 1.5px;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+    text-shadow: 1px 1px 2px #fff;
 }
 
-.flame-banner .banner-price{
+.flame-banner .banner-price {
     display: block;
-    margin: 10px auto 0 auto;
-    font-size: 2.6rem;
-    color: #ffffff;
+    font-size: 3rem;
+    color: #d00000;
+    margin-top: 10px;
     font-weight: bold;
-    
-    
-    
-    width: 100px;
-    letter-spacing: 1px;
-    
+    text-shadow: 1px 1px 2px #fff;
 }
+
 
 
 .flame-new {
