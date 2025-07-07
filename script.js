@@ -31,20 +31,37 @@ function loadMenu(screenType, containerId) {
                         if (typeof items === "object" && items.type === "banner") {
                             var bannerDiv = document.createElement("div");
                             bannerDiv.className = "menu-banner flame-banner";
-                            bannerDiv.textContent = items.text || "";
+                            
+                            // Create banner title from category name
+                            var bannerTitle = document.createElement("div");
+                            bannerTitle.className = "banner-title";
+                            bannerTitle.textContent = category; // Use the category name as title
+                            bannerDiv.appendChild(bannerTitle);
+                            
+                            // Add banner text content as individual items
+                            var bannerContent = document.createElement("div");
+                            bannerContent.className = "banner-content";
+                            
+                            // Split the text by commas and create individual sauce items
+                            if (items.text) {
+                                var sauces = items.text.split(',');
+                                for (var j = 0; j < sauces.length; j++) {
+                                    var sauceItem = document.createElement("div");
+                                    sauceItem.className = "sauce-item";
+                                    sauceItem.textContent = sauces[j].trim();
+                                    bannerContent.appendChild(sauceItem);
+                                }
+                            }
+                            
+                            bannerDiv.appendChild(bannerContent);
+                            
                             if (items.price) {
                                 var priceSpan = document.createElement("span");
                                 priceSpan.className = "banner-price";
                                 priceSpan.textContent = " " + items.price;
                                 bannerDiv.appendChild(priceSpan);
                             }
-                            // Add support for text1
-                            if (items.text1) {
-                                var text1Div = document.createElement("div");
-                                text1Div.className = "banner-text1";
-                                text1Div.textContent = items.text1;
-                                bannerDiv.appendChild(text1Div);
-                            }
+                            
                             container.appendChild(bannerDiv);
                             continue;
                         }

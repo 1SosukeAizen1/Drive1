@@ -165,9 +165,9 @@
         ],
         
         
-        "Dipping Sauces": {
+        "Dipping Sauces:": {
             "type": "banner",
-            "text": "BBQ, Ranch, Buffalo, Blue Cheese, Honey Mustard, sweet & sour, Honey BBQ, Sweet Chili, Hab mango, slims sauce",
+            "text": "BBQ, Ranch, Buffalo, Blue Cheese, H-Mustard, sweet & sour, Honey BBQ, Sweet Chili, Hab mango, slims sauce",
             "price": ""
         },
         "Loaded fries": [
@@ -194,7 +194,7 @@
                 "price": ""
             },
             {
-                "name": "Chicken, Gyro, both, OR BBQ Chicken legs",
+                "name": "Chicken, Gyro, combo, OR BBQ Chicken legs",
                 "desc": "",
                 "price": "Sm $10.99   Lg $12.99"
             },
