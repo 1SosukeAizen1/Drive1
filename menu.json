@@ -93,12 +93,7 @@
         ],
         "salads": [
             {
-                "name": "Caesar salad ",
-                "desc": "",
-                "price": ""
-            },
-            {
-                "name": "Garden salad",
+                "name": "Caesar / Garden",
                 "desc": "",
                 "price": ""
             }
