@@ -93,9 +93,14 @@
         ],
         "salads": [
             {
-                "name": "Caesar / Garden ",
+                "name": "Caesar salad ",
                 "desc": "",
-                "price": "$5.99 add meat for $2.50"
+                "price": ""
+            },
+            {
+                "name": "Garden salad",
+                "desc": "",
+                "price": ""
             }
         ],
         "Kids Meals": [

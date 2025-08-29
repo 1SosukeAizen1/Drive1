@@ -179,6 +179,17 @@ body {
     
 }
 
+.item-desc.only-desc {
+    border: 10px dashed #f70000;
+    
+    padding: 2px 2px;
+    
+    color: #ffffff;
+    font-weight: bold;
+    margin: 8px 0;
+    display: inline-block;
+}
+
 .item-price {
     font-size: 2.8rem;
     color: #ffffff;

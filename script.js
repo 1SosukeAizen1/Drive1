@@ -59,7 +59,7 @@ function loadMenu(screenType, containerId) {
                                 var priceSpan = document.createElement("span");
                                 priceSpan.className = "banner-price";
                                 priceSpan.textContent = " " + items.price;
-                                bannerDiv.appendChild(priceSpan);
+                                bannerDiv.appendChild(priceSpan);   q
                             }
                             
                             container.appendChild(bannerDiv);
@@ -109,24 +109,31 @@ function loadMenu(screenType, containerId) {
                             var itemElement = document.createElement("div");
                             itemElement.className = "menu-item";
 
-                            // Check if item.desc exists and is not empty
-                            if (item.desc && item.desc.trim() !== "") {
+                            // If only desc exists (no name and no price)
+                            if ((!item.name || item.name.trim() === "") &&
+                                item.desc && item.desc.trim() !== "" &&
+                                (!item.price || item.price.trim() === "")) {
                                 itemElement.innerHTML =
-                                    '<div class="item-name">' + item.name + '</div>' +
+                                    '<div class="item-desc only-desc">' + item.desc + '</div>';
+                            }
+                            // Check if item.desc exists and is not empty
+                            else if (item.desc && item.desc.trim() !== "") {
+                                itemElement.innerHTML =
+                                    '<div class="item-name">' + (item.name || "") + '</div>' +
                                     '<div class="item-desc">' + item.desc + '</div>' +
-                                    '<div class="item-price">' + item.price + '</div>';
+                                    '<div class="item-price">' + (item.price || "") + '</div>';
                             } else {
                                 // If price contains any letter (text), keep new line
-                                if (/[a-zA-Z]/.test(item.price)) {
+                                if (item.price && /[a-zA-Z]/.test(item.price)) {
                                     itemElement.innerHTML =
-                                        '<div class="item-name">' + item.name + '</div>' +
+                                        '<div class="item-name">' + (item.name || "") + '</div>' +
                                         '<div class="item-price">' + item.price + '</div>';
                                 } else {
                                     // No description and price is just a number: put name and price in a flex row
                                     itemElement.classList.add('inline');
                                     itemElement.innerHTML =
-                                        '<span class="item-name">' + item.name + '</span>' +
-                                        '<span class="item-price">' + item.price + '</span>';
+                                        '<span class="item-name">' + (item.name || "") + '</span>' +
+                                        '<span class="item-price">' + (item.price || "") + '</span>';
                                 }
                             }
                             itemsGrid.appendChild(itemElement);
