@@ -180,14 +180,14 @@ body {
 }
 
 .item-desc.only-desc {
-    border: 5px dashed #f70000;
+    border: 8px dashed #f70000;
     
     padding: 5px 0;
     
     color: #ffffff;
     font-weight: bold;
     margin: 1px 0;
-    margin-bottom: 2px;
+    margin-bottom: 8px;
     display: inline-block;
 }
 
