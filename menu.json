@@ -83,6 +83,11 @@
                 "name": "Chicken, Gyro, combo(both meats)",
                 "desc": "",
                 "price": "Sm $11.99   Lg $13.99"
+            },
+            {
+                "name": "steak",
+                "desc": "",
+                "price": "Sm $12.99   Lg $14.99"
             }
         ]
     },
