@@ -1,4 +1,5 @@
 // Hardcoded default screen types
+var screenType = "drive1"; // Main menu
 var secondaryScreenType = "drive1/2"; // Secondary menu
 
 

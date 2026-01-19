@@ -54,50 +54,8 @@
             }
         ]
         ,
-        "Fish": [
-            {
-                "name": "",
-                "desc": "Dinner includes fries, toast, coleslaw, and a drink",
-                "price": ""
-            },
-            {
-                "name": "2 fish dinner",
-                "desc": "",
-                "price": "$12.99"
-            },
-            {
-                "name": "3 fish dinner",
-                "desc": "",
-                "price": "$16.99"
-            },
-            {
-                "name": "",
-                "desc": "",
-                "price": "Just fish"
-            },
-            {
-                "name": "1 pc fish",
-                "desc": "",
-                "price": "$4.99"
-            },
-            {
-                "name": "2 pc fish",
-                "desc": "",
-                "price": "$8.99"
-            },
-            {
-                "name": "3 pc fish",
-                "desc": "",
-                "price": "$12.99"
-            }
-        ],
-        "salads": [
-            {
-                "name": "Caesar / Garden",
-                "desc": "",
-                "price": ""
-            }
-        ],
+       
+        
         "Kids Meals": [
             {
                 "name": "kids burger",
@@ -115,13 +73,17 @@
                 "price": "$8.99"
             }
         ],
-        "buffalo wings":[
+        "Rice Bowls": [
             {
                 "name": "",
-                "desc": "tossed in BBQ, BUFFALO, HABANERO MANGO, SWEET CHILI OR HONEY BBQ",
+                "desc": "rice, lettuce and sauce: white - spicy - tzatziki",
                 "price": ""
+            },
+            {
+                "name": "Chicken, Gyro, combo(both meats)",
+                "desc": "",
+                "price": "Sm $11.99   Lg $13.99"
             }
-            
         ]
     },
     "drive1/2": {
@@ -174,35 +136,17 @@
             {
                 "name": "Buffalo chicken",
                 "desc": "",
-                "price": "$9.99"
+                "price": "Sm $9.99"
             },
             {
                 "name": "Gyro Cheese",
                 "desc": "",
-                "price": "$9.99"
+                "price": "Sm $9.99"
             },
             {
                 "name": "CheeseBurger ",
                 "desc": "",
-                "price": "$8.99"
-            }
-        ],
-        "Rice Bowls": [
-            {
-                "name": "",
-                "desc": "rice, lettuce and sauce: white - spicy - tzatziki",
-                "price": ""
-            },
-            {
-                "name": "Chicken, Gyro, combo(both meats)",
-                "desc": "",
-                "price": "Sm $11.99   Lg $13.99"
-            },
-            
-            {
-                "name": "Steak Bowl",
-                "desc": "",
-                "price": "Sm $12.99 Lg $14.99"
+                "price": "Sm $8.99"
             }
         ]
         
