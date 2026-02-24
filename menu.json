@@ -3,12 +3,12 @@
         "Whole Wings": [
           
             {
-                "name": "3 wings dinner",
+                "name": "3 wings meal",
                 "desc": "",
                 "price": "$11.99"
             },
             {
-                "name": "5 wings dinner",
+                "name": "5 wings meal",
                 "desc": "",
                 "price": "$15.99"
             },
@@ -82,12 +82,12 @@
         "Chicken Fingers": [
         
             {
-                "name": "3 finger dinner",
+                "name": "3 finger meal",
                 "desc": "",
                 "price": "$11.99"
             },
             {
-                "name": "5 finger dinner",
+                "name": "5 finger meal",
                 "desc": "",
                 "price": "$15.99"
             },
