@@ -1,11 +1,7 @@
 {
     "drive1": {
         "Whole Wings": [
-            {
-                "name": "",
-                "desc": "Dinner includes fries, toast, coleslaw, and a drink",
-                "price": ""
-            },
+          
             {
                 "name": "3 wings dinner",
                 "desc": "",
@@ -62,11 +58,7 @@
                 "desc": "",
                 "price": "$8.99"
             },
-            {
-                "name": "Grilled Cheese",
-                "desc": "",
-                "price": "$8.99"
-            },
+            
             {
                 "name": "2 pc fingers",
                 "desc": "",
@@ -88,11 +80,7 @@
     },
     "drive1/2": {
         "Chicken Fingers": [
-            {
-                "name": "",
-                "desc": "Dinner includes fries, toast, coleslaw, and a drink",
-                "price": ""
-            },
+        
             {
                 "name": "3 finger dinner",
                 "desc": "",
