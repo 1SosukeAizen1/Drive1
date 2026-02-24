@@ -58,12 +58,12 @@
             {
                 "name": "Rice bowl",
                 "desc": "Rice, lettuce and sauce: white - spicy - tzatziki",
-                "price": "$10.99"
+                "price": ""
             },
             {
                 "name": "Chicken, Gyro, combo (both meats)",
                 "desc": "",
-                "price": "Sm $11.99, Lg $13.99"
+                "price": "Sm $11.99"
             }
         ]
     },
