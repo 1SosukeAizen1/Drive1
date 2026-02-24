@@ -1,7 +1,6 @@
 {
     "drive1": {
         "Whole Wings": [
-          
             {
                 "name": "3 wings meal",
                 "desc": "",
@@ -13,15 +12,14 @@
                 "price": "$15.99"
             },
             {
-                "name": "",
+                "name": "Just wings",
                 "desc": "",
-                "price": "Just wings"
+                "price": "$9.99"
             },
-            
             {
-                "name": "3 wings ",
+                "name": "3 wings",
                 "desc": "",
-                "price": "$7.99 "
+                "price": "$7.99"
             },
             {
                 "name": "5 wings",
@@ -43,17 +41,13 @@
                 "desc": "",
                 "price": "$44.99"
             }
-        ]
-        ,
-       
-        
+        ],
         "Kids Meals": [
             {
-                "name": "kids burger",
+                "name": "Kids burger",
                 "desc": "",
                 "price": "$8.99"
             },
-            
             {
                 "name": "2 pc fingers",
                 "desc": "",
@@ -62,20 +56,19 @@
         ],
         "Rice Bowls": [
             {
-                "name": "",
-                "desc": "rice, lettuce and sauce: white - spicy - tzatziki",
-                "price": ""
+                "name": "Rice bowl",
+                "desc": "Rice, lettuce and sauce: white - spicy - tzatziki",
+                "price": "$10.99"
             },
             {
-                "name": "Chicken, Gyro, combo(both meats)",
+                "name": "Chicken, Gyro, combo (both meats)",
                 "desc": "",
-                "price": "Sm $11.99   Lg $13.99"
+                "price": "Sm $11.99, Lg $13.99"
             }
         ]
     },
     "drive1/2": {
         "Chicken Fingers": [
-        
             {
                 "name": "3 finger meal",
                 "desc": "",
@@ -87,15 +80,14 @@
                 "price": "$15.99"
             },
             {
-                "name": "",
+                "name": "Just fingers",
                 "desc": "",
-                "price": "Just fingers"
+                "price": "$9.99"
             },
-            
             {
-                "name": "3 pc fingers ",
+                "name": "3 pc fingers",
                 "desc": "",
-                "price": "$7.99 "
+                "price": "$7.99"
             },
             {
                 "name": "5 pc fingers",
@@ -106,19 +98,16 @@
                 "name": "8 pc fingers",
                 "desc": "",
                 "price": "$16.99"
-            }
-            ,
+            },
             {
                 "name": "12 pc fingers",
                 "desc": "",
                 "price": "$24.99"
-            },
+            }
         ],
-        
-        
-        "Dipping Sauces:": {
+        "Dipping Sauces": {
             "type": "banner",
-            "text": "BBQ, Ranch, Buffalo, Blue Cheese, H-Mustard, sweet&sour, Honey BBQ, Sweet Chili, Hab mango, slims sauce",
+            "text": "BBQ, Ranch, Buffalo, Blue Cheese, Honey Mustard, Sweet & Sour, Honey BBQ, Sweet Chili, Habanero Mango, Slims Sauce",
             "price": ""
         },
         "Loaded Fries": [
@@ -133,7 +122,5 @@
                 "price": "$9.99"
             }
         ]
-        
-        
     }
 }
